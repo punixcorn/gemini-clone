@@ -1,0 +1,99 @@
+.App {
+  border: 1px solid red;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: right;
+  margin: 0;
+  background-color: gray;
+  padding: 0.5rem;
+}
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover,
+a:focus {
+  color: red;
+}
+
+.children {
+  border: 1px solid black;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.borderBV {
+  border: 2px solid blueviolet;
+}
+
+/* Flex box
+.container {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+.c-0 {
+  flex-grow: 1;
+}
+
+.c-1 {
+  flex-basis: 300px;
+}
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, 100px);
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  /*
+  grid-auto-rows: 100px; /*size for the no implicit row 
+  grid-auto-columns: 100px;
+  grid-auto-flow: column; /* the direction to make non-implicit items appear
+  grid-gap: 1rem;
+  */
+}
+
+.c-0 {
+  background-color: blue;
+  /* grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2; 
+  z-index: 1; /* making it float*/
+  grid-area: header;
+}
+
+.c-1 {
+  background-color: yellow;
+  /* grid-row: span 2;
+  grid-column: span 3; */
+  /* grid-row: 1/3;
+  grid-column: 1/4; */
+
+  grid-area: main;
+}
+
+.c-2 {
+  background-color: green;
+  /* grid-area: row-start column-start row-end column-end; */
+  /* grid-area: 1/4/3/5; */
+
+  grid-area: footer;
+}
