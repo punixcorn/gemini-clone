@@ -1,9 +1,7 @@
 # Gemini Webpage Clone
-
-live : `https://punixcorn.github.io/gemini-clone
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). </br>
+[**link to live project**](https://punixcorn.github.io/gemini-clone) </br>
 Other tools used :
-
+- React js
 - Css3
 
 ## Run development Server
